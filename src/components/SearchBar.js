@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class SearchBar extends React.Component {
   state = { term: '' };
 
-  onFormSubmit = (event) => {     // arrow function makes this = SearchBar
+  onFormSubmit = event => {     // arrow function makes this = SearchBar
     event.preventDefault();
     this.props.onSubmit(this.state.term);   // This. devant props. quand utilisé avec function component
   }
